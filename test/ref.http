@@ -49,3 +49,7 @@ Authorization: Bearer {{Token_Request.response.body.access_token}}
 {
     
 }
+
+### Delete all records
+POST {{host}}{{svc}}/deleteAllRecs
+Content-Type: application/json
