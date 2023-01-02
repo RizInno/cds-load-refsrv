@@ -1,12 +1,12 @@
 {
   "name": "refsrv",
   "version": "1.1.0",
-  "description": "Cap reference server.",
+  "description": "SAP CAP reference server.",
   "repository": "https://github.com/RizInno/cds-load-refsrv",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "^6",
+    "@sap/cds": "^6.3.2",
     "express": "^4",
     "@sap/xssec": "^3",
     "passport": "^0",
