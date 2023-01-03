@@ -40,7 +40,7 @@ You can use the npm package `patch-package` to patch the file automatically.
 
 When you run patch-package with the latest version of npm, you will get an error message. To fix this, you can use the following set of commands:
 1. delete `package-lock.json`
-2. `npm i --lockfile-version 3`
+2. `npm i --lockfile-version 2`
 3. `npx patch-package --patch-dir ./patches @sap/cds`
 4. delete `package-lock.json` one more time
 5. `npm i`
