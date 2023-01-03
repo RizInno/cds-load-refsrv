@@ -7,16 +7,18 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^6",
-    "express": "^4",
     "@sap/xssec": "^3",
-    "passport": "^0",
-    "hdb": "^0.19.0"
+    "express": "^4",
+    "hdb": "^0.19.0",
+    "passport": "^0"
   },
   "devDependencies": {
+    "patch-package": "^6.5.0",
     "sqlite3": "^5"
   },
   "scripts": {
-    "start": "cds run"
+    "start": "cds run",
+    "postinstall": "patch-package"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
