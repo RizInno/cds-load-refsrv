@@ -10,10 +10,10 @@
     "@sap/xssec": "^3",
     "express": "^4",
     "hdb": "^0.19.0",
-    "passport": "^0"
+    "passport": "^0",
+    "patch-package": "^6.5.0"
   },
   "devDependencies": {
-    "patch-package": "^6.5.0",
     "sqlite3": "^5"
   },
   "scripts": {
@@ -55,7 +55,7 @@
           "kind": "hana-cloud"
         },
         "auth": {
-          "kind": "xsuaa"
+          "kind": "dummy"
         }
       }
     }
