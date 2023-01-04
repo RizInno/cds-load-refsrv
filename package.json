@@ -1,22 +1,24 @@
 {
   "name": "refsrv",
   "version": "1.1.0",
-  "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "description": "SAP CAP reference server.",
+  "repository": "https://github.com/RizInno/cds-load-refsrv",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "@sap/cds": "^6",
-    "express": "^4",
     "@sap/xssec": "^3",
+    "express": "^4",
+    "hdb": "^0.19.0",
     "passport": "^0",
-    "hdb": "^0.19.0"
+    "patch-package": "^6.5.0"
   },
   "devDependencies": {
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5"
   },
   "scripts": {
-    "start": "cds run"
+    "start": "cds run",
+    "postinstall": "patch-package"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -53,7 +55,7 @@
           "kind": "hana-cloud"
         },
         "auth": {
-          "kind": "xsuaa"
+          "kind": "dummy"
         }
       }
     }
