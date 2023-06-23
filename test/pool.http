@@ -1,6 +1,6 @@
 
 @host={{$dotenv %LOADTESTSERVER}}
-@svc=/pool
+@svc=/odata/v4/pool
 
 @authUrl={{$dotenv %XSUAA_AUTH_URL}}
 

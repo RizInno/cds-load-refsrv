@@ -1,6 +1,6 @@
 
 @host={{$dotenv %LOADTESTSERVER}}
-@svc=/mass-change
+@svc=/rest/mass-change
 
 @authUrl={{$dotenv %XSUAA_AUTH_URL}}
 
